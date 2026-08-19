@@ -12,12 +12,12 @@ from getpass import getpass
 # CONFIG
 # ============================================
 
-EMAIL = "bhuvanrajnaik@gmail.com"
+EMAIL = "your mail"
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
 # Enter securely in terminal
-APP_PASSWORD = "cokw zyra hguj tgsv"
+APP_PASSWORD = "XXXX XXXX XXXXX XXXX"
 
 # Receiver
 receiver_email = input("Enter receiver email: ")
@@ -141,7 +141,7 @@ with open(HTML_FILE, "r", encoding="utf-8") as file:
 import urllib.parse
 
 # Replace this with your NEW Deployed Google Apps Script Web App URL
-TRACKING_BASE_URL = "https://script.google.com/macros/s/AKfycbwgVQTO0vLOV7LAQTgBnqvgpwFb837g6XxQv1qeJvlrIEFclFJ95Yh07r5yPlDJnISa/exec"
+TRACKING_BASE_URL = "" #custom tracking script
  
 # URL Encode all parameters for reliability
 params = {
