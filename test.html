@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvan Raj // Product Stack</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #010409;
+            --window: #0d1117;
+            --border: #30363d;
+            --accent: #58a6ff;
+            --success: #3fb950;
+            --gold: #f1e05a;
+            --text: #e6edf3;
+            --text-dim: #8b949e;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .terminal-window {
+            max-width: 750px;
+            margin: 20px auto;
+            background: var(--window);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Window Header */
+        .window-header {
+            background: #161b22;
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .dots {
+            display: flex;
+            gap: 8px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .red {
+            background: #ff5f56;
+        }
+
+        .yellow {
+            background: #ffbd2e;
+        }
+
+        .green {
+            background: #27c93f;
+        }
+
+        .window-title {
+            font-family: 'JetBrains Mono';
+            font-size: 11px;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+        }
+
+        .content {
+            padding: 45px;
+        }
+
+        /* Intro Text */
+        .intro-text {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: var(--text);
+        }
+
+        .prompt {
+            font-family: 'JetBrains Mono';
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* Sections */
+        .module {
+            margin-bottom: 50px;
+        }
+
+        .module-label {
+            font-family: 'JetBrains Mono';
+            font-size: 11px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            display: block;
+            opacity: 0.8;
+        }
+
+        .heading {
+            font-size: 30px;
+            font-weight: 800;
+            letter-spacing: -1.2px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        /* Feature Boxes */
+        .feature-box {
+            background: rgba(1, 4, 9, 0.6);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 15px;
+        }
+
+        .gif-frame img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .sub-terminal {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: #c9d1d9;
+            background: #010409;
+            padding: 18px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #21262d;
+            color: var(--gold);
+            font-family: 'JetBrains Mono';
+            font-size: 10px;
+            padding: 3px 10px;
+            border-radius: 4px;
+            margin-right: 8px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(241, 224, 90, 0.2);
+        }
+
+        .highlight-green {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .highlight-gold {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--border);
+            padding-top: 35px;
+            margin-top: 20px;
+        }
+
+        .footer-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-family: 'JetBrains Mono';
+            font-weight: 600;
+            margin-right: 25px;
+            font-size: 14px;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 25px;
+            }
+
+            .heading {
+                font-size: 24px;
+            }
+
+            .gif-frame img {
+                height: 180px;
+            }
+
+            .intro-text {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="terminal-window">
+        <div class="window-header">
+            <div class="dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <div class="window-title">BHUVAN_RAJ // PRODUCT_STACK_v6.0</div>
+            <div></div>
+        </div>
+
+        <div class="content">
+
+            <!-- THE INTRO HOOK -->
+            <div class="intro-text">
+                <span class="prompt">$</span> cat intro.txt<br><br>
+                Hi [Name],<br><br>
+                Most candidates bring a resume. <b>I bring a Product Stack.</b><br><br>
+                Myself Bhuvan Raj Guguloth,I am a Final yeat dual degree student at IIT Kharagpur, but my real specialty is <b>High-Velocity Execution.</b> I
+                am a Designer-cum-Builder who uses AI as a second brain to turn product chaos into scalable logic.
+            </div>
+
+            <!-- 1. THE PERSONA -->
+            <div class="module">
+                <span class="module-label">01 // THE_ELITE_BUILDER_PERSONA</span>
+                <div class="heading">I don't just "intern." I <span style="color:var(--accent)">execute.</span></div>
+
+                <div class="feature-box">
+                    <span class="badge">2x GOLD MEDALIST</span>
+                    <span class="badge">3x NATIONAL FINALIST</span>
+                    <span class="badge">FOUNDER</span>
+                    <div class="sub-terminal" style="border-left-color: var(--gold);">
+                        <span class="highlight-gold">● #1 in Product Management & Case Study</span> @ IIT Kharagpur.<br>
+                        <span class="highlight-gold">● National Finalist:</span> IIT Madras, IIT BHU, and Ministry of
+                        Power.<br>
+                        <span class="highlight-gold">● Prodigy Digitals:</span> Built from $0 to ₹2L revenue in 60 days.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. SKILLS (Second Brain / Chaos) -->
+            <div class="module">
+                <span class="module-label">02 // THE_SKILL_STACK</span>
+                <div class="heading">Using AI as a <span class="highlight-green">second brain.</span></div>
+
+                <div class="feature-box">
+                    <div class="gif-frame"><img src="https://media1.tenor.com/m/eRi7jJSUUrUAAAAC/cat-kung-fu.gif"
+                            alt="AI second brain"></div>
+                    <div class="sub-terminal">
+                        <span class="prompt">></span> <b>AI Orchestration:</b> RAG pipelines & Multi-agent
+                        workflows.<br>
+                        <span class="prompt">></span> <b>Systems Thinking:</b> Turning "Day 0" chaos into structured 40+
+                        PRDs.<br>
+                        <span class="prompt">></span> <b>Design-to-Code:</b> Figma → High-Fi Prototypes → Flutter
+                        Deployment.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. EXPERIENCES -->
+            <div class="module">
+                <span class="module-label">03 // EXECUTION_LOG</span>
+
+                <!-- AI Exp -->
+                <div class="feature-box" style="margin-bottom: 20px;">
+                    <div class="heading" style="font-size: 20px;">AI Systems & Workflows</div>
+                    <div class="sub-terminal">
+                        <span class="highlight-green">[Insurge/Imago AI]</span> Orchestrated 8+ AI agents. Squashed
+                        STT-LLM-TTS loops.<br>
+                        <span class="highlight-green">IMPACT: 80% engagement spike via Dashboard Revamp.</span>
+                    </div>
+                </div>
+
+                <!-- UX Exp -->
+                <div class="feature-box" style="margin-bottom: 20px;">
+                    <div class="gif-frame"><img
+                            src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3V4ZWZ6M2ZidHhpeGZ0NXF6ZWd6Ynp3bXp6Z3Z6Z3Z6Z3Z6Z3Z6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o72F8t9TDi2xVnxOE/giphy.gif"
+                            alt="UX research"></div>
+                    <div class="heading" style="font-size: 20px;">UX Friction Archeology</div>
+                    <div class="sub-terminal">
+                        <span class="highlight-green">[Hero MotoCorp]</span> Redesigned rental UX (39+ screens).<br>
+                        <span class="highlight-green">IMPACT: 12% rise in WAU for Freedo Rentals.</span>
+                    </div>
+                </div>
+
+                <!-- Shipping Exp -->
+                <div class="feature-box">
+                    <div class="gif-frame"><img src="https://media1.tenor.com/m/y2JXkY1pXkwAAAAC/cat-computer.gif"
+                            alt="Shipping fast"></div>
+                    <div class="heading" style="font-size: 20px;">0→1 Deployment</div>
+                    <div class="sub-terminal">
+                        <span class="highlight-green">[Vedapath]</span> Shipped Flutter app to Play Store solo. 95% NLP
+                        accuracy.<br>
+                        <span class="highlight-green">STATUS: Production Live.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <span class="prompt">$</span> ls ./proof_of_work<br><br>
+                <a href="https://morning-airboat-edc.notion.site/Portfolio-19a86f6fab7680dabb75d919decb596f" class="footer-link">PORTFOLIO.exe ↗</a>
+                <a href="https://github.com/GugulothBhuvan" class="footer-link">GITHUB.git ↗</a>
+                <a href="https://www.linkedin.com/in/bhuvanrajguguloth05/" class="footer-link">LINKEDIN.log ↗</a>
+                <br><br>
+                <div style="font-family: 'JetBrains Mono'; font-size: 12px; color: var(--text-dim); line-height: 1.8;">
+                    BHUVAN RAJ GUGULOTH // IIT KHARAGPUR<br>
+                    +91-9392885490 // bhuvanrajnaik@gmail.com<br>
+                    <span style="color: var(--success)">[SYSTEM READY FOR DEPLOYMENT]</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

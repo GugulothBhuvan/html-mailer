@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vapi // Bhuvan Raj - Terminal Applicant Pass</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body
+    style="margin: 0; padding: 24px 12px; font-family: 'JetBrains Mono', 'Courier New', monospace; background-color: #08090d; color: #E2E8F0; -webkit-font-smoothing: antialiased; line-height: 1.5;">
+
+    <!-- Outer Container (Matches standard email widths) -->
+    <div
+        style="max-width: 680px; margin: 0 auto; background-color: #0e111a; border: 1.5px solid #222638; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.6), 0 0 25px rgba(139, 233, 253, 0.05);">
+
+        <!-- HEADER BAR (Terminal Brand Panel) -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0"
+            style="padding: 16px 24px; background-color: #171a29; border-bottom: 1.5px solid #222638;">
+            <tr>
+                <td align="left" valign="middle">
+                    <!-- Brand / Terminal Tag -->
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td valign="middle" style="padding-right: 8px;">
+                                <svg height="20" viewBox="0 0 101 33" style="display: block; height: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <path d="M17.991 13.3c1.999 1.025 4.273.502 5.72-1.215a104 104 0 0 0 2.692-3.358 4.62 4.62 0 0 1 3.65-1.81 4.52 4.52 0 0 1 4.194 2.833l6.5 16.157c.085.212-.156.41-.341.277-1.947-1.392-7.955-5.6-12.52-7.842-1.958-.96-4.165-.499-5.553 1.182-1.221 1.48-2.56 3.298-3.536 4.661a4.76 4.76 0 0 1-3.862 2.006 4.65 4.65 0 0 1-4.313-2.918l-8.54-21.3c-.09-.225.188-.426.368-.263 2.332 2.118 9.653 8.572 15.541 11.59m60.972-3.272a8.55 8.55 0 0 1 6.64-3.126c5.248 0 9.37 4.098 9.37 9.635s-4.088 9.616-9.336 9.616c-2.737 0-5.137-1.16-6.674-3.03V33H75.55V6.902h3.412zM65.98 6.902c4.785 0 7.724 2.895 7.724 7.407v11.827h-3.39V23.22c-1.206 1.73-3.43 2.932-5.765 2.933-4.07 0-6.67-2.181-6.67-5.49 0-3.61 3.052-6.053 8.629-6.053h3.73v-.602c0-2.632-1.62-4.249-4.333-4.249-2.298 0-4.22 1.504-4.37 3.61h-3.468c.189-3.76 3.505-6.467 7.913-6.467M48.696 21.633l5.727-14.731h3.74L50.38 26.136h-3.554L39.003 6.902h3.628zm51.53 4.503h-3.449V6.902h3.449zm-33.605-8.932c-3.466 0-5.35 1.166-5.35 3.384 0 1.692 1.28 2.857 3.541 2.857 3.128 0 5.501-2.519 5.501-5.677v-.564zm18.678-6.915c-3.562 0-6.336 2.582-6.336 6.324 0 3.628 2.774 6.285 6.336 6.285 3.486 0 6.261-2.769 6.261-6.285 0-3.63-2.775-6.324-6.261-6.324m14.927-5.198h-3.449V1.65h3.449z" fill="#FFFFFF" />
+                                </svg>
+                            </td>
+                            <td valign="middle" style="padding-bottom: 2px;">
+                                <span style="font-size: 11px; color: #6272a4; font-family: 'JetBrains Mono', monospace; margin-left: 4px;">v1.8.0</span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="right" valign="middle">
+                    <!-- Status Indicator -->
+                    <div
+                        style="border: 1px solid rgba(139, 233, 253, 0.4); color: #8BE9FD; font-size: 10px; font-weight: 700; letter-spacing: 0.8px; padding: 4px 12px; border-radius: 12px; display: inline-block; font-family: 'JetBrains Mono', monospace; background-color: rgba(139, 233, 253, 0.08); text-transform: uppercase; box-shadow: 0 0 10px rgba(139, 233, 253, 0.15);">
+                        ● INTERN APPLICANT
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- HERO SECTION (Interactive CLI Mockup) -->
+        <div style="padding: 24px 24px; background-color: #0e111a; border-bottom: 1.5px solid #222638;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td valign="top" align="left" style="padding-right: 20px;">
+                        <div style="font-size: 12px; color: #6272a4; margin-bottom: 8px;">
+                            <span style="color: #50FA7B;">bhuvan@iitkgp</span>:<span style="color: #8BE9FD;">~/vapi</span>$ cat pitch.txt
+                        </div>
+                        <h1
+                            style="font-family: 'JetBrains Mono', monospace; font-size: 30px; font-weight: 800; line-height: 1.2; color: #FFFFFF; margin: 0; letter-spacing: -1px;">
+                            Resumes are <span style="color: #FF79C6; font-weight: 700;">MID.</span>
+                        </h1>
+                        <p style="font-size: 13px; color: #8E96A7; margin: 12px 0 0 0; line-height: 1.6;">
+                            // So I sent you this.
+                        </p>
+                    </td>
+                    <td valign="top" width="160" align="right">
+                        <!-- Mewing Cat GIF Container with Terminal Screen Style -->
+                        <div
+                            style="width: 160px; height: 160px; border-radius: 12px; overflow: hidden; border: 1.5px solid #222638; box-shadow: 0 4px 16px rgba(0,0,0,0.4); background-color: #08090d;">
+                            <img src="https://media1.tenor.com/m/lfSiFrmhrv4AAAAC/mewing-cute.gif" width="160"
+                                height="160" style="display: block; object-fit: cover;" alt="Mewing Cat">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- RECRUITER NOTE -->
+        <div style="padding: 24px 24px; background-color: #131622; border-bottom: 1.5px solid #222638;">
+            <div style="font-size: 12px; color: #6272a4; margin-bottom: 8px;">
+                <span style="color: #50FA7B;">bhuvan@iitkgp</span>:<span style="color: #8BE9FD;">~/vapi</span>$ cat note_to_recruiter.md
+            </div>
+            
+            <div style="border-left: 3px solid #BD93F9; padding-left: 16px; margin: 12px 0;">
+                <p
+                    style="font-size: 15px; line-height: 1.5; color: #FFFFFF; margin: 0 0 12px 0; font-weight: 700;">
+                    Hi [Name],
+                </p>
+                <p style="font-size: 13.5px; line-height: 1.7; color: #A9B1C6; margin: 0; font-family: 'JetBrains Mono', monospace;">
+                    I am a <span style="color: #F1FA8C; font-weight: 600;">designer-turned-builder</span> currently
+                    evolving into a <span style="color: #FF79C6; font-weight: 700;">Product Builder</span>. Over the last 2
+                    years, I've been grinding across AI, SaaS, mobile products, and multi-agent systems—shipping features,
+                    writing PRDs, running user research, and turning ideas into reality. I'm not just a product enthusiast; I
+                    am an <span style="color: #50FA7B; font-weight: 600;">executor</span> who thrives on turning <span
+                        style="color: #FFB86C; font-weight: 600;">chaos into scalable logic</span>, bridging the gap between
+                    User Experience, value propositions, and business outcomes.
+                    <br><br>
+                    My specialty? <span style="color: #8BE9FD; font-weight: 700;">High-velocity execution</span>. I am
+                    looking to ship impactful products and execute alongside an elite team.
+                    <br><br>
+                    Instead of sending another basic PDF resume, I built this HTML Mail.
+                </p>
+            </div>
+        </div>
+
+        <!-- PLAYSTYLE & CORE SKILLS -->
+        <div style="padding: 24px 24px; background-color: #0e111a; border-bottom: 1.5px solid #222638;">
+            <div style="font-size: 12px; color: #6272a4; margin-bottom: 14px;">
+                <span style="color: #50FA7B;">bhuvan@iitkgp</span>:<span style="color: #8BE9FD;">~/vapi</span>$ ./run_playstyle.sh
+            </div>
+
+            <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                style="background-color: #131622; border: 1.5px solid #222638; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                <!-- Pane Title Bar -->
+                <tr>
+                    <td colspan="2" style="background-color: #171a29; padding: 10px 16px; border-bottom: 1.5px solid #222638; font-size: 11px; color: #8E96A7;">
+                        <table cellpadding="0" cellspacing="0" border="0" style="display: inline-block; vertical-align: middle;">
+                            <tr>
+                                <td style="padding-right: 5px;"><div style="width: 8px; height: 8px; border-radius: 50%; background: #ff5f56;"></div></td>
+                                <td style="padding-right: 5px;"><div style="width: 8px; height: 8px; border-radius: 50%; background: #ffbd2e;"></div></td>
+                                <td style="padding-right: 12px;"><div style="width: 8px; height: 8px; border-radius: 50%; background: #27c93f;"></div></td>
+                            </tr>
+                        </table>
+                        <span style="vertical-align: middle;">bhuvan@iitkgp: ~ -- SYSTEMS PLAYSTYLE</span>
+                    </td>
+                </tr>
+                <!-- Pane Body -->
+                <tr>
+                    <td valign="top" style="padding: 18px 18px 0 18px;">
+                        <h3
+                            style="font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 700; color: #FFFFFF; margin: 0 0 12px 0;">
+                            [SYSTEM_PLAYSTYLE] Infrastructure & Core Skillsets
+                        </h3>
+
+                        <!-- Skills GIF -->
+                        <div
+                            style="margin-bottom: 16px; border-radius: 8px; overflow: hidden; border: 1.5px solid #222638; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+                            <img src="https://media1.tenor.com/m/eRi7jJSUUrUAAAAC/cat-kung-fu.gif" width="100%"
+                                style="display: block; width: 100%; height: auto;" alt="Kung Fu Cat Playstyle">
+                        </div>
+
+                        <!-- Skill Details Monospaced -->
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                            style="font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.6; color: #A9B1C6; padding-bottom: 18px;">
+                            <tr>
+                                <td valign="top" style="padding-bottom: 10px;">
+                                    <span style="color: #6272a4; margin-right: 8px;">├──</span>
+                                    <strong style="color: #FF79C6;">Systems Thinking:</strong> De-obfuscating vague "Day 0" ideas into detailed product roadmaps, metrics, and PRDs.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" style="padding-bottom: 10px;">
+                                    <span style="color: #6272a4; margin-right: 8px;">├──</span>
+                                    <strong style="color: #F1FA8C;">Figma-to-Code Execution:</strong> Bridging product, engineering, and design by shipping working code from Figma files.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <span style="color: #6272a4; margin-right: 8px;">└──</span>
+                                    <strong style="color: #8BE9FD;">Strategy & Market Research:</strong> Synthesizing competitor playbooks, market dynamics, and financial unit economics with consultant-level rigor.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- WORK EXPERIENCE -->
+        <div style="padding: 24px 24px; background-color: #131622; border-bottom: 1.5px solid #222638;">
+            <div style="font-size: 12px; color: #6272a4; margin-bottom: 12px;">
+                <span style="color: #50FA7B;">bhuvan@iitkgp</span>:<span style="color: #8BE9FD;">~/vapi</span>$ grep -E "Internship" experiences.log
+            </div>
+
+            <div style="margin-bottom: 14px;">
+                <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">[WORK_EXPERIENCE] Product Internships</span>
+            </div>
+
+            <!-- Single Terminal Panel housing all logs -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                style="background-color: #0e111a; border: 1.5px solid #222638; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-family: 'JetBrains Mono', monospace; font-size: 13px;">
+                
+                <!-- Title Bar -->
+                <tr>
+                    <td style="background-color: #171a29; padding: 10px 16px; border-bottom: 1.5px solid #222638; font-size: 11px; color: #8E96A7;">
+                        <table cellpadding="0" cellspacing="0" border="0" style="display: inline-block; vertical-align: middle;">
+                            <tr>
+                                <td style="padding-right: 5px;"><div style="width: 8px; height: 8px; border-radius: 50%; background: #ff5f56;"></div></td>
+                                <td style="padding-right: 5px;"><div style="width: 8px; height: 8px; border-radius: 50%; background: #ffbd2e;"></div></td>
+                                <td style="padding-right: 12px;"><div style="width: 8px; height: 8px; border-radius: 50%; background: #27c93f;"></div></td>
+                            </tr>
+                        </table>
+                        <span style="vertical-align: middle;">/var/log/experiences.log</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding: 16px 20px;">
+                        
+                        <!-- Experience 1 -->
+                        <div style="margin-bottom: 24px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <span style="background-color: rgba(189, 147, 249, 0.1); color: #BD93F9; font-size: 9px; font-weight: bold; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(189, 147, 249, 0.3);">AI_Conversational_Workflows</span>
+                                    </td>
+                                    <td align="right">
+                                        <a href="https://insurgeai.com/" target="_blank" style="color: #BD93F9; text-decoration: none; font-size: 12px; font-weight: bold;">
+                                            insurgeai.com <span style="font-size: 10px;">↗</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4 style="color: #FFFFFF; font-size: 14px; margin: 8px 0 4px 0; font-weight: 700;">
+                                [01] Insurge AI: Conversational Workflows
+                            </h4>
+                            <p style="color: #A9B1C6; margin: 4px 0 0 0; line-height: 1.6;">
+                                Taught AI agents how to listen, think, and talk back. Shipped 20+ features, built meeting automation workflows, and helped take conversational AI from demo mode to client-ready.
+                            </p>
+                            <div style="border-bottom: 1px dashed #222638; margin-top: 16px;"></div>
+                        </div>
+
+                        <!-- Experience 2 -->
+                        <div style="margin-bottom: 24px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <span style="background-color: rgba(80, 250, 123, 0.1); color: #50FA7B; font-size: 9px; font-weight: bold; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(80, 250, 123, 0.3);">Growth_&_UX_Optimization</span>
+                                    </td>
+                                    <td align="right">
+                                        <a href="https://freedo.rentals/" target="_blank" style="color: #50FA7B; text-decoration: none; font-size: 12px; font-weight: bold;">
+                                            freedo.rentals <span style="font-size: 10px;">↗</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4 style="color: #FFFFFF; font-size: 14px; margin: 8px 0 4px 0; font-weight: 700;">
+                                [02] Hero MotoCorp: Freedo Rentals
+                            </h4>
+                            <p style="color: #A9B1C6; margin: 4px 0 0 0; line-height: 1.6;">
+                                Went user-friction hunting. Prioritized 30+ opportunities, improved rental journeys, and helped move weekly active users in the right direction.
+                            </p>
+                            <div style="border-bottom: 1px dashed #222638; margin-top: 16px;"></div>
+                        </div>
+
+                        <!-- Experience 3 -->
+                        <div style="margin-bottom: 24px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <span style="background-color: rgba(255, 184, 108, 0.1); color: #FFB86C; font-size: 9px; font-weight: bold; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(255, 184, 108, 0.3);">AI_Platform_Orchestration</span>
+                                    </td>
+                                    <td align="right">
+                                        <a href="https://www.imagoai.com/" target="_blank" style="color: #FFB86C; text-decoration: none; font-size: 12px; font-weight: bold;">
+                                            imagoai.com <span style="font-size: 10px;">↗</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4 style="color: #FFFFFF; font-size: 14px; margin: 8px 0 4px 0; font-weight: 700;">
+                                [03] Imago AI: Multi-Agent Platform
+                            </h4>
+                            <p style="color: #A9B1C6; margin: 4px 0 0 0; line-height: 1.6;">
+                                Herded a bunch of AI agents into behaving like a team. Wrote 40+ PRDs, coordinated 30+ sprints, and turned stakeholder chaos into shipped features.
+                            </p>
+                            <div style="border-bottom: 1px dashed #222638; margin-top: 16px;"></div>
+                        </div>
+
+                        <!-- Experience 4 -->
+                        <div style="margin-bottom: 24px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <span style="background-color: rgba(139, 233, 253, 0.1); color: #8BE9FD; font-size: 9px; font-weight: bold; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(139, 233, 253, 0.3);">0→1_Product_Launch</span>
+                                    </td>
+                                    <td align="right">
+                                        <a href="https://vedapath.app/" target="_blank" style="color: #8BE9FD; text-decoration: none; font-size: 12px; font-weight: bold;">
+                                            vedapath.app <span style="font-size: 10px;">↗</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4 style="color: #FFFFFF; font-size: 14px; margin: 8px 0 4px 0; font-weight: 700;">
+                                [04] Vedapath: 0→1 Launch
+                            </h4>
+                            <p style="color: #A9B1C6; margin: 4px 0 0 0; line-height: 1.6;">
+                                Started with a blank screen and ended with a live product. Built the app, shipped AI-powered learning experiences, and took a product from "idea" to "available on the Play Store."
+                            </p>
+                            <div style="border-bottom: 1px dashed #222638; margin-top: 16px;"></div>
+                        </div>
+
+                        <!-- Experience 5 -->
+                        <div>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <span style="background-color: rgba(241, 250, 140, 0.1); color: #F1FA8C; font-size: 9px; font-weight: bold; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(241, 250, 140, 0.3);">Enterprise_AI_Workflows</span>
+                                    </td>
+                                    <td align="right">
+                                        <a href="https://www.vishwa.ai/" target="_blank" style="color: #F1FA8C; text-decoration: none; font-size: 12px; font-weight: bold;">
+                                            vishwa.ai <span style="font-size: 10px;">↗</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4 style="color: #FFFFFF; font-size: 14px; margin: 8px 0 4px 0; font-weight: 700;">
+                                [05] Vishwa AI: Enterprise Workflows
+                            </h4>
+                            <p style="color: #A9B1C6; margin: 4px 0 0 0; line-height: 1.6;">
+                                Turned founder ideas into workflows users actually understood. Designed, tested, iterated, and shipped AI experiences without getting lost in feature creep.
+                            </p>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- STATS OVERVIEW / CAREER PROFILE -->
+        <div style="padding: 24px 24px; background-color: #0e111a; border-bottom: 1.5px solid #222638;">
+            <div style="font-size: 12px; color: #6272a4; margin-bottom: 12px;">
+                <span style="color: #50FA7B;">bhuvan@iitkgp</span>:<span style="color: #8BE9FD;">~/vapi</span>$ python check_profile_metrics.py
+            </div>
+            
+            <div style="margin-bottom: 14px;">
+                <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">[CAREER_METRICS] Profile Summary</span>
+            </div>
+
+            <!-- Stats Grid Table (Cross-client compatible grid) -->
+            <table width="100%" cellpadding="0" cellspacing="8" border="0" style="margin: 0 -8px;">
+                <tr>
+                    <td width="50%" valign="top">
+                        <div
+                            style="background-color: #131622; padding: 14px; border-radius: 10px; border: 1.5px solid #222638;">
+                            <div
+                                style="font-size: 10px; color: #6272a4; margin-bottom: 4px; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.5px;">
+                                // Alma Mater</div>
+                            <div
+                                style="font-size: 14px; font-weight: 700; color: #FFFFFF; font-family: 'JetBrains Mono', monospace;">
+                                IIT Kharagpur</div>
+                        </div>
+                    </td>
+                    <td width="50%" valign="top">
+                        <div
+                            style="background-color: #131622; padding: 14px; border-radius: 10px; border: 1.5px solid #222638;">
+                            <div
+                                style="font-size: 10px; color: #6272a4; margin-bottom: 4px; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.5px;">
+                                // Product Experience</div>
+                            <div
+                                style="font-size: 14px; font-weight: 700; color: #BD93F9; font-family: 'JetBrains Mono', monospace;">
+                                5 Product Internships</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" valign="top">
+                        <div
+                            style="background-color: #131622; padding: 14px; border-radius: 10px; border: 1.5px solid #222638;">
+                            <div
+                                style="font-size: 10px; color: #6272a4; margin-bottom: 4px; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.5px;">
+                                // Research Experience</div>
+                            <div
+                                style="font-size: 14px; font-weight: 700; color: #FFFFFF; font-family: 'JetBrains Mono', monospace;">
+                                3 Research Internships</div>
+                        </div>
+                    </td>
+                    <td width="50%" valign="top">
+                        <div
+                            style="background-color: #131622; padding: 14px; border-radius: 10px; border: 1.5px solid #222638;">
+                            <div
+                                style="font-size: 10px; color: #6272a4; margin-bottom: 4px; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.5px;">
+                                // Case Competitions</div>
+                            <div
+                                style="font-size: 14px; font-weight: 700; color: #50FA7B; font-family: 'JetBrains Mono', monospace;">
+                                7x Case Comps Winner</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Achievements (Horizontal block cards) -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top: 12px; border-collapse: separate; border-spacing: 6px 0;">
+                <tr>
+                    <td width="33%" valign="top" style="background-color: #131622; padding: 12px; border-radius: 10px; border: 1.5px solid rgba(255, 184, 108, 0.3); height: 90px;">
+                        <div style="color: #FFB86C; font-size: 9px; font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">
+                            🏅 GOLD_MEDALS
+                        </div>
+                        <div style="font-size: 12px; font-weight: 700; color: #FFFFFF;">2x Gold Medalist</div>
+                        <div style="font-size: 10px; color: #6272a4; margin-top: 4px;">IIT Kharagpur Case Comps</div>
+                    </td>
+                    <td width="33%" valign="top" style="background-color: #131622; padding: 12px; border-radius: 10px; border: 1.5px solid rgba(255, 121, 198, 0.3); height: 90px;">
+                        <div style="color: #FF79C6; font-size: 9px; font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">
+                            🏆 NAT_FINALIST
+                        </div>
+                        <div style="font-size: 12px; font-weight: 700; color: #FFFFFF;">3x Finalist</div>
+                        <div style="font-size: 10px; color: #6272a4; margin-top: 4px;">IITM, IIT BHU, MoP</div>
+                    </td>
+                    <td width="33%" valign="top" style="background-color: #131622; padding: 12px; border-radius: 10px; border: 1.5px solid rgba(80, 250, 123, 0.3); height: 90px;">
+                        <div style="color: #50FA7B; font-size: 9px; font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">
+                            🚀 FOUNDER_SYS
+                        </div>
+                        <div style="font-size: 12px; font-weight: 700; color: #FFFFFF;">Prodigy Digitals</div>
+                        <div style="font-size: 10px; color: #6272a4; margin-top: 4px;">Scaled in 60 days</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- APPLICATION DOSSIER -->
+        <div style="padding: 24px 24px; background-color: #131622; border-bottom: 1.5px solid #222638;">
+            <div style="font-size: 12px; color: #6272a4; margin-bottom: 12px;">
+                <span style="color: #50FA7B;">bhuvan@iitkgp</span>:<span style="color: #8BE9FD;">~/vapi</span>$ ls -la ./dossier/
+            </div>
+            
+            <div style="background-color: #0e111a; border: 1.5px solid #222638; border-radius: 12px; padding: 16px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                <div style="font-size: 14px; font-weight: 700; color: #FFFFFF; margin-bottom: 12px;">
+                    [📁 APPLICATION_DOSSIER] Portfolios & Assets
+                </div>
+                
+                <!-- Links list styled as files -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family: 'JetBrains Mono', monospace; font-size: 13px;">
+                    <!-- Notion Link Row -->
+                    <tr>
+                        <td valign="middle" style="padding: 10px 0; border-bottom: 1px solid #222638; color: #A9B1C6;">
+                            <span style="color: #6272a4; margin-right: 10px;">-rwxr-xr-x</span> 
+                            <span style="color: #50FA7B; font-weight: bold;">Portfolio_Notion.sh</span>
+                        </td>
+                        <td align="right" valign="middle" style="padding: 10px 0; border-bottom: 1px solid #222638;">
+                            <a href="https://morning-airboat-edc.notion.site/Portfolio-19a86f6fab7680dabb75d919decb596f" target="_blank"
+                                style="background-color: #50FA7B; color: #08090d; padding: 6px 14px; border-radius: 6px; font-size: 11px; font-weight: bold; text-decoration: none; display: inline-block;">
+                                execute ↗
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Figma Link Row -->
+                    <tr>
+                        <td valign="middle" style="padding: 10px 0; border-bottom: 1px solid #222638; color: #A9B1C6;">
+                            <span style="color: #6272a4; margin-right: 10px;">-rw-r--r--</span> 
+                            <span style="color: #FF79C6; font-weight: bold;">DESIGN_PORTFOLIO.fig</span>
+                        </td>
+                        <td align="right" valign="middle" style="padding: 10px 0; border-bottom: 1px solid #222638;">
+                            <a href="https://tinyurl.com/3r3dns59" target="_blank"
+                                style="background-color: #FF79C6; color: #08090d; padding: 6px 14px; border-radius: 6px; font-size: 11px; font-weight: bold; text-decoration: none; display: inline-block;">
+                                execute ↗
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- GitHub Link Row -->
+                    <tr>
+                        <td valign="middle" style="padding: 10px 0; color: #A9B1C6;">
+                            <span style="color: #6272a4; margin-right: 10px;">drwxr-xr-x</span> 
+                            <span style="color: #F1FA8C; font-weight: bold;">GITHUB_SOURCE.git</span>
+                        </td>
+                        <td align="right" valign="middle" style="padding: 10px 0;">
+                            <a href="https://github.com/GugulothBhuvan" target="_blank"
+                                style="background-color: #F1FA8C; color: #08090d; padding: 6px 14px; border-radius: 6px; font-size: 11px; font-weight: bold; text-decoration: none; display: inline-block;">
+                                execute ↗
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- HIRE ME CHALLENGE -->
+        <div style="padding: 24px 24px; background-color: #0e111a;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td valign="middle" align="left">
+                        <div style="font-size: 12px; color: #6272a4; margin-bottom: 8px;">
+                            <span style="color: #50FA7B;">bhuvan@iitkgp</span>:<span style="color: #8BE9FD;">~/vapi</span>$ ./hire_challenge.sh
+                        </div>
+                        <h4
+                            style="font-family: 'JetBrains Mono', monospace; font-size: 24px; font-weight: 800; line-height: 1.2; color: #FFFFFF; margin: 0; letter-spacing: -0.5px;">
+                            "Hope you would<br><span style="color: #FF79C6;">hire me : )</span>"
+                        </h4>
+                    </td>
+                    <td valign="middle" width="160" align="right" style="padding-left: 16px;">
+                        <div
+                            style="width: 160px; height: 160px; border-radius: 12px; overflow: hidden; border: 1.5px solid #222638; box-shadow: 0 4px 16px rgba(0,0,0,0.4);">
+                            <img src="https://media1.tenor.com/m/3YunLjG4jrEAAAAC/sendy-cat-meme.gif" width="160"
+                                height="160" style="display: block; object-fit: cover; border: 0;"
+                                alt="Sendy Cat Meme">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- TERMINAL FOOTER -->
+        <div style="padding: 24px 24px; background-color: #08090d; text-align: center; border-top: 1.5px solid #222638;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 12px;">
+                <tr>
+                    <td align="center">
+                        <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+                            <tr>
+                                <td valign="middle" style="padding-right: 8px;">
+                                    <svg height="18" viewBox="0 0 101 33" style="display: block; height: 18px;" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                        <path d="M17.991 13.3c1.999 1.025 4.273.502 5.72-1.215a104 104 0 0 0 2.692-3.358 4.62 4.62 0 0 1 3.65-1.81 4.52 4.52 0 0 1 4.194 2.833l6.5 16.157c.085.212-.156.41-.341.277-1.947-1.392-7.955-5.6-12.52-7.842-1.958-.96-4.165-.499-5.553 1.182-1.221 1.48-2.56 3.298-3.536 4.661a4.76 4.76 0 0 1-3.862 2.006 4.65 4.65 0 0 1-4.313-2.918l-8.54-21.3c-.09-.225.188-.426.368-.263 2.332 2.118 9.653 8.572 15.541 11.59m60.972-3.272a8.55 8.55 0 0 1 6.64-3.126c5.248 0 9.37 4.098 9.37 9.635s-4.088 9.616-9.336 9.616c-2.737 0-5.137-1.16-6.674-3.03V33H75.55V6.902h3.412zM65.98 6.902c4.785 0 7.724 2.895 7.724 7.407v11.827h-3.39V23.22c-1.206 1.73-3.43 2.932-5.765 2.933-4.07 0-6.67-2.181-6.67-5.49 0-3.61 3.052-6.053 8.629-6.053h3.73v-.602c0-2.632-1.62-4.249-4.333-4.249-2.298 0-4.22 1.504-4.37 3.61h-3.468c.189-3.76 3.505-6.467 7.913-6.467M48.696 21.633l5.727-14.731h3.74L50.38 26.136h-3.554L39.003 6.902h3.628zm51.53 4.503h-3.449V6.902h3.449zm-33.605-8.932c-3.466 0-5.35 1.166-5.35 3.384 0 1.692 1.28 2.857 3.541 2.857 3.128 0 5.501-2.519 5.501-5.677v-.564zm18.678-6.915c-3.562 0-6.336 2.582-6.336 6.324 0 3.628 2.774 6.285 6.336 6.285 3.486 0 6.261-2.769 6.261-6.285 0-3.63-2.775-6.324-6.261-6.324m14.927-5.198h-3.449V1.65h3.449z" fill="#FFFFFF" />
+                                    </svg>
+                                </td>
+                                <td valign="middle" style="padding-bottom: 2px;">
+                                    <span
+                                        style="font-size: 12px; font-weight: 700; color: #FFFFFF; font-family: 'JetBrains Mono', monospace; letter-spacing: -0.3px; margin-left: 4px;">CLI</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+            <p
+                style="font-family: 'JetBrains Mono', monospace; font-weight: bold; font-size: 9px; color: #0BD8B6; letter-spacing: 2.5px; text-transform: uppercase; margin: 0 0 10px 0;">
+                EVERYDAY CALLS. EXTRAORDINARY OUTCOMES. // PRODUCT INTERNS WHO EXECUTE.
+            </p>
+            <p
+                style="font-size: 11px; color: #6272a4; margin: 0 0 12px 0; line-height: 1.5; font-family: 'JetBrains Mono', monospace;">
+                This isn't just an email. It's your official challenge to hire me.
+            </p>
+            <div
+                style="font-size: 9px; color: rgba(255,255,255,0.2); letter-spacing: 0.5px; font-family: 'JetBrains Mono', monospace;">
+                BHUVAN RAJ GUGULOTH // IIT KHARAGPUR // [CONNECTION SECURE]
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Tracking Pixel -->
+    {{tracking_pixel}}
+
+</body>
+
+</html>
